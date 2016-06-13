@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Reactive3ViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-ij-ROj" customClass="PrimaryView" customModule="Reactive3ViewTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="560" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1L-eg-ajT">
+                                        <rect key="frame" x="251" y="88" width="59" height="21"/>
+                                        <string key="text">primary
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-Q3-NTl">
+                                        <rect key="frame" x="217" y="8" width="126" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d1L-eg-ajT" firstAttribute="centerY" secondItem="Iam-ij-ROj" secondAttribute="centerY" id="625-Gi-2Ig"/>
+                                    <constraint firstItem="Yeu-Q3-NTl" firstAttribute="centerX" secondItem="Iam-ij-ROj" secondAttribute="centerX" id="Da8-ok-5UM"/>
+                                    <constraint firstItem="Yeu-Q3-NTl" firstAttribute="top" secondItem="Iam-ij-ROj" secondAttribute="top" constant="8" id="xLH-oR-JI3"/>
+                                    <constraint firstItem="d1L-eg-ajT" firstAttribute="centerX" secondItem="Iam-ij-ROj" secondAttribute="centerX" id="xP3-Sl-Vv9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="282-m2-ezG" customClass="Subordinate_1_View" customModule="Reactive3ViewTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="247" width="560" height="172"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subordinate 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-Fx-kNx">
+                                        <rect key="frame" x="229" y="75" width="103" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fjV-Fx-kNx" firstAttribute="centerX" secondItem="282-m2-ezG" secondAttribute="centerX" id="Z4P-3H-JM4"/>
+                                    <constraint firstItem="fjV-Fx-kNx" firstAttribute="centerY" secondItem="282-m2-ezG" secondAttribute="centerY" id="fxe-kF-SW9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-uC-wA6" customClass="Subordinate_2_View" customModule="Reactive3ViewTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="427" width="560" height="153"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subordinate 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GQ-OB-hRl">
+                                        <rect key="frame" x="227" y="66" width="106" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1GQ-OB-hRl" firstAttribute="centerX" secondItem="PnV-uC-wA6" secondAttribute="centerX" id="9en-cA-SQr"/>
+                                    <constraint firstItem="1GQ-OB-hRl" firstAttribute="centerY" secondItem="PnV-uC-wA6" secondAttribute="centerY" id="f5J-eY-Sbc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PnV-uC-wA6" firstAttribute="top" secondItem="282-m2-ezG" secondAttribute="bottom" constant="8" symbolic="YES" id="2fH-64-Icd"/>
+                            <constraint firstItem="Iam-ij-ROj" firstAttribute="trailing" secondItem="282-m2-ezG" secondAttribute="trailing" id="6tm-V1-umi"/>
+                            <constraint firstItem="Iam-ij-ROj" firstAttribute="leading" secondItem="282-m2-ezG" secondAttribute="leading" id="8qZ-re-9Os"/>
+                            <constraint firstItem="282-m2-ezG" firstAttribute="top" secondItem="Iam-ij-ROj" secondAttribute="bottom" constant="21" id="Sg5-zb-TUp"/>
+                            <constraint firstItem="PnV-uC-wA6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="427" id="U1P-Ef-dU0"/>
+                            <constraint firstItem="282-m2-ezG" firstAttribute="trailing" secondItem="PnV-uC-wA6" secondAttribute="trailing" id="UDl-Id-CDe"/>
+                            <constraint firstItem="Iam-ij-ROj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UQM-Mf-8Qq"/>
+                            <constraint firstItem="Iam-ij-ROj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VJi-5b-fQW"/>
+                            <constraint firstItem="282-m2-ezG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="247" id="dGB-ia-bm6"/>
+                            <constraint firstItem="Iam-ij-ROj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="fU0-Uw-iHO"/>
+                            <constraint firstItem="282-m2-ezG" firstAttribute="leading" secondItem="PnV-uC-wA6" secondAttribute="leading" id="iSl-B9-ccU"/>
+                            <constraint firstAttribute="bottom" secondItem="PnV-uC-wA6" secondAttribute="bottom" constant="20" symbolic="YES" id="sqd-pS-ken"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="primaryView" destination="Iam-ij-ROj" id="kXE-WX-dy2"/>
+                        <outlet property="subordinate1View" destination="282-m2-ezG" id="xcg-eG-H60"/>
+                        <outlet property="subordinate2View" destination="PnV-uC-wA6" id="AzM-pc-760"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="377"/>
+        </scene>
+    </scenes>
+</document>

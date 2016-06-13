@@ -1,0 +1,6 @@
+framework module Pods_Reactive3ViewTest {
+  umbrella header "Pods-Reactive3ViewTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
