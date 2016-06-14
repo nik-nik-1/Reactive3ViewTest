@@ -13,10 +13,10 @@ class PrimaryView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] someVar in
+        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] currentScheme in
             print ("PrimaryView")
             
-            self?.backgroundColor = ssViewModel.currentScheme?.primaryViewColor
+            self?.backgroundColor = currentScheme.primaryViewColor
         }
     }
     

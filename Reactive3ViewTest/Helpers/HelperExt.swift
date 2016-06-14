@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import ReactiveCocoa
+import Result
 
 
 //MARK: Global variables
@@ -16,7 +18,7 @@ var ssViewModel: SomeStuffViewModel{
     get {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        return appDelegate.ssViewModel!
+        return appDelegate.ssViewModel
     }
 }
 
@@ -56,4 +58,11 @@ func ConvertHexToUIColor(hexColor: String) -> UIColor {
     return UIColor(red: valueRed, green: valueGreen, blue: valueBlue, alpha: valueAlpha)
 }
 
+//MARK: Reactive
+extension UIView {
+    
+    public var rac_backgroundColor: MutableProperty<UIColor> {
+        return lazyMutableProperty(self, key: &AssociationKey.backgroundColor, setter: { self.backgroundColor = $0 }, getter: { self.backgroundColor! })
+    }
+}
 

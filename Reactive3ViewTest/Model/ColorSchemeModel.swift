@@ -11,7 +11,7 @@ import UIKit
 
 struct ColorSchemeModel {
     
-    var currentItemOfScheme: (UIColor, UIColor, UIColor)?
+    var currentItemOfScheme: (UIColor,UIColor,UIColor)?
     
     var primaryViewColor:UIColor {return (currentItemOfScheme?.0)!}
     var Subordinate1ViewColor:UIColor {return (currentItemOfScheme?.1)!}
@@ -20,8 +20,7 @@ struct ColorSchemeModel {
     private var massOfSheme: [(UIColor,UIColor,UIColor)] = []
     
     init () {
-        setupMass()
-        setShemeByNumber()
+        self.init(0)
     }
     
     init (_ numberOfSheme:Int) {
@@ -29,7 +28,7 @@ struct ColorSchemeModel {
         setShemeByNumber(numberOfSheme)
     }
     
-    mutating func setShemeByNumber (numberOfSheme:Int = 0) {
+    private mutating func setShemeByNumber (numberOfSheme:Int = 0) {
         
         var numberOfShemeToGet:Int
         let massOfShemeCount = massOfSheme.count
@@ -43,10 +42,12 @@ struct ColorSchemeModel {
         currentItemOfScheme = massOfSheme[numberOfShemeToGet]
     }
     
-    mutating func setupMass() {
+    private mutating func setupMass() {
         let pC = {ConvertHexToUIColor($0)}
         massOfSheme.append(pC("#FFDBC5"),pC("#EF4339"),pC("#B01C33"))
         massOfSheme.append(pC("#FFF4E1"),pC("#FFEBB7"),pC("#E67A7A"))
         massOfSheme.append(pC("#85A6B1"),pC("#8BD7D1"),pC("#CAEDDE"))
+        massOfSheme.append(pC("#93E4C1"),pC("#3BAEA0"),pC("#118A7E"))
+        massOfSheme.append(pC("#0C9CEE"),pC("#3DBDC2"),pC("#A1F480"))
     }
 }

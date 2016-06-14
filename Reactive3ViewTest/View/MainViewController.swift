@@ -12,7 +12,6 @@ import Result
 
 class MainViewController: UIViewController {
 
-    
     @IBOutlet weak var primaryView: UIView!
     @IBOutlet weak var subordinate1View: UIView!
     @IBOutlet weak var subordinate2View: UIView!
@@ -26,8 +25,6 @@ class MainViewController: UIViewController {
     }
     
      func setupInit () {
-//       let vc = subordinate1View as! Subordinate_1_View
-//       vc.mvController = self
         
         tapPressGestureOfPrimaryView = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
 //        tapPressGestureOfPrimaryView.cancelsTouchesInView = false;

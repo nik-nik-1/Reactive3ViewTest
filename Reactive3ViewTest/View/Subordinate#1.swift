@@ -7,19 +7,16 @@
 //
 
 import UIKit
-import ReactiveCocoa
-import Result
 
 class Subordinate_1_View: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] someVar in
+        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] currentScheme in
             print ("Subordinate_1_View")
             
-            self?.backgroundColor = ssViewModel.currentScheme?.Subordinate1ViewColor
-            
+            self?.backgroundColor = currentScheme.Subordinate1ViewColor
         }
     }
     

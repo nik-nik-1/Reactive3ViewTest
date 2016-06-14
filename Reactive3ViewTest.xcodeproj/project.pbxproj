@@ -20,6 +20,8 @@
 		E7D001491D0EC5A500A26114 /* SomeStuffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001481D0EC5A500A26114 /* SomeStuffViewModel.swift */; };
 		E7D0014B1D0EE53500A26114 /* HelperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0014A1D0EE53500A26114 /* HelperExt.swift */; };
 		E7D0014D1D0EE90F00A26114 /* ColorSchemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0014C1D0EE90F00A26114 /* ColorSchemeModel.swift */; };
+		E7D001501D1016B600A26114 /* ReactiveCocoaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0014E1D1016B600A26114 /* ReactiveCocoaExtensions.swift */; };
+		E7D001511D1016B600A26114 /* Signal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0014F1D1016B600A26114 /* Signal+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		E7D001481D0EC5A500A26114 /* SomeStuffViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeStuffViewModel.swift; sourceTree = "<group>"; };
 		E7D0014A1D0EE53500A26114 /* HelperExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExt.swift; sourceTree = "<group>"; };
 		E7D0014C1D0EE90F00A26114 /* ColorSchemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeModel.swift; sourceTree = "<group>"; };
+		E7D0014E1D1016B600A26114 /* ReactiveCocoaExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtensions.swift; sourceTree = "<group>"; };
+		E7D0014F1D1016B600A26114 /* Signal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Signal+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +108,13 @@
 		E7D0013A1D0EB85100A26114 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E7D0014A1D0EE53500A26114 /* HelperExt.swift */,
+				E7D0014E1D1016B600A26114 /* ReactiveCocoaExtensions.swift */,
+				E7D0014F1D1016B600A26114 /* Signal+Extensions.swift */,
 				E7D001461D0EC3F800A26114 /* Podfile */,
 				E7D0012F1D0EB7E400A26114 /* Assets.xcassets */,
 				E7D001311D0EB7E400A26114 /* LaunchScreen.storyboard */,
 				E7D001341D0EB7E400A26114 /* Info.plist */,
-				E7D0014A1D0EE53500A26114 /* HelperExt.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -265,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D001291D0EB7E400A26114 /* AppDelegate.swift in Sources */,
+				E7D001501D1016B600A26114 /* ReactiveCocoaExtensions.swift in Sources */,
 				E7D001411D0EC1AF00A26114 /* PrimaryView.swift in Sources */,
 				E7D001431D0EC22400A26114 /* Subordinate#1.swift in Sources */,
 				E7D001491D0EC5A500A26114 /* SomeStuffViewModel.swift in Sources */,
+				E7D001511D1016B600A26114 /* Signal+Extensions.swift in Sources */,
 				E7D0014B1D0EE53500A26114 /* HelperExt.swift in Sources */,
 				E7D0013F1D0EB8CA00A26114 /* MainViewController.swift in Sources */,
 				E7D0014D1D0EE90F00A26114 /* ColorSchemeModel.swift in Sources */,

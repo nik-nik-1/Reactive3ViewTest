@@ -13,9 +13,10 @@ class Subordinate_2_View: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] someVar in
+        ssViewModel.checkSomeAmzSignal.observeNext{ [weak self] currentScheme in
             print ("Subordinate_2_View")
-            self?.backgroundColor = ssViewModel.currentScheme?.Subordinate2ViewColor
+            
+            self?.backgroundColor = currentScheme.Subordinate2ViewColor
         }
     }
     
