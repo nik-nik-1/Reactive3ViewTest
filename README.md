@@ -7,6 +7,7 @@ ReactiveCocoa - Simple test. Cup of view (in 1 view) and some action binding
 2. Subscription two listeners on one source (RAC4)
 3. <i>"ReactiveCocoaExtensions.swift"</i> & <i>"Signal+Extensions.swift"</i> - several UI extentions for RAC4
 3. Color of View's change (from a predetermined range of variants)
+4. Has been tested using <a href="https://github.com/realm/SwiftLint">SwiftLint</a>
 
 <i>How it works?</i> -> When you press in the "primary" view running color change in the bottom two another view's ("subordinate 1" & "subordinate 2")
 

@@ -27,14 +27,12 @@ class MainViewController: UIViewController {
      func setupInit () {
         
         tapPressGestureOfPrimaryView = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
-//        tapPressGestureOfPrimaryView.cancelsTouchesInView = false;
         self.primaryView.addGestureRecognizer(tapPressGestureOfPrimaryView)
-        
     }
     
     //MARK: Gesture func
     func handleTapGesture(gesture: UITapGestureRecognizer) {
         ssViewModel.handleTapGesture(gesture.state)
-        
     }
+    
 }
